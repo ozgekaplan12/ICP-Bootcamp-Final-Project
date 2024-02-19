@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Icp_Final_project_backend": {
+      "candid": "src/Icp_Final_project_backend/Icp_Final_project_backend.did",
+      "package": "Icp_Final_project_backend",
+      "type": "rust"
+    },
+    "Icp_Final_project_frontend": {
+      "dependencies": [
+        "Icp_Final_project_backend"
+      ],
+      "source": [
+        "src/Icp_Final_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Icp_Final_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
